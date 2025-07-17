@@ -76,15 +76,15 @@ const items = [
 </script>
 
 <template>
-  <div class="bg-white mx-auto p-4 max-w-sm h-screen flex flex-col shadow-lg gap-8">
-    <div class="flex gap-4 items-center">
+  <div class="bg-white mx-auto p-4 w-full h-screen flex flex-col gap-8">
+    <div class="flex gap-4 items-center p-2">
       <RouterLink to="/">
         <ChevronLeftIcon class="w-8 h-8 p-1 text-rose-400 cursor-pointer bg-rose-100 rounded-md" />
       </RouterLink>
       <h3 class="text-lg font-semibold">Order Details</h3>
     </div>
 
-    <div class="flex items-center mx-auto w-full">
+    <div class="flex items-center mx-auto w-full p-2">
       <div class="relative w-full">
         <input type="text" class="bg-gray-100 text-gray-900 text-sm rounded-full block w-full ps-5 pe-10 p-2.5"
           placeholder="Search..." />
@@ -100,7 +100,7 @@ const items = [
       </button>
     </div>
 
-    <div class="flex flex-col gap-4 overflow-y-auto grow">
+    <div class="flex flex-col gap-2 overflow-y-auto grow p-2">
       <div v-for="item in items" :key="item.id"
         class="flex justify-between items-center bg-white shadow p-2 rounded-lg">
         <div class="flex gap-4 items-center">
@@ -123,7 +123,7 @@ const items = [
       </div>
     </div>
 
-    <div class="relative z-50 w-full max-w-sm -translate-x-1/2 left-1/2">
+    <div class="relative z-50 w-full -translate-x-1/2 left-1/2 p-2">
       <div class="bg-rose-500 rounded-2xl p-4 text-white flex flex-col gap-4">
         <div class="flex justify-between items-center">
           <p>Subtotal</p>
