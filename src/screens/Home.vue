@@ -30,6 +30,48 @@ const items = [
     price: 8,
     image: 'https://placehold.co/20x20'
   },
+  {
+    id: 5,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
+  {
+    id: 6,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
+  {
+    id: 7,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
+  {
+    id: 8,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
+  {
+    id: 9,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
+  {
+    id: 10,
+    name: 'Original Salad',
+    description: 'Lovy Food',
+    price: 8,
+    image: 'https://placehold.co/20x20'
+  },
 ];
 </script>
 
@@ -58,18 +100,21 @@ const items = [
       </button>
     </div>
 
-    <div v-for="item in items" :key="item.id" class="flex justify-between items-center bg-white shadow p-2 rounded-lg">
-      <div class="flex gap-4 items-center">
-        <img :src="item.image" alt="placeholder" class="w-15 h-15 object-cover rounded-lg" />
-        <div>
-          <h6 class="font-semibold">{{ item.name }}</h6>
-          <p class="text-gray-500 text-sm">{{ item.description }}</p>
+    <div class="flex flex-col gap-4 overflow-y-auto grow">
+      <div v-for="item in items" :key="item.id"
+        class="flex justify-between items-center bg-white shadow p-2 rounded-lg">
+        <div class="flex gap-4 items-center">
+          <img :src="item.image" alt="placeholder" class="w-15 h-15 object-cover rounded-lg" />
+          <div>
+            <h6 class="font-semibold">{{ item.name }}</h6>
+            <p class="text-gray-500 text-sm">{{ item.description }}</p>
+          </div>
         </div>
+        <span class="font-semibold text-2xl text-rose-500 me-4">${{ item.price }}</span>
       </div>
-      <span class="font-semibold text-2xl text-rose-500 me-4">${{ item.price }}</span>
     </div>
 
-    <div class="fixed z-50 w-full h-14 max-w-sm -translate-x-1/2  bottom-4 left-1/2 px-4">
+    <div class="relative z-50 w-full h-20 max-w-sm -translate-x-1/2 left-1/2">
       <div class="grid h-full max-w-lg grid-cols-4 mx-auto bg-white border border-gray-200 rounded-2xl">
         <button
           class="inline-flex flex-col items-center justify-center px-5 rounded-s-2xl hover:bg-rose-100 bg-rose-100">
