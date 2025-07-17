@@ -114,22 +114,22 @@ const items = [
       </div>
     </div>
 
-    <div class="relative z-50 w-full h-20 max-w-sm -translate-x-1/2 left-1/2">
+    <div class="relative z-50 w-full max-w-sm -translate-x-1/2 left-1/2">
       <div class="grid h-full max-w-lg grid-cols-4 mx-auto bg-white border border-gray-200 rounded-2xl">
         <button
-          class="inline-flex flex-col items-center justify-center px-5 rounded-s-2xl hover:bg-rose-100 bg-rose-100">
+          class="inline-flex flex-col items-center justify-center p-5 rounded-s-2xl hover:bg-rose-100 bg-rose-100">
           <HomeIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Home</span>
         </button>
-        <button class="inline-flex flex-col items-center justify-center px-5 hover:bg-rose-100">
+        <button class="inline-flex flex-col items-center justify-center p-5 hover:bg-rose-100">
           <MapPinIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Map</span>
         </button>
-        <RouterLink to="/order" class="inline-flex flex-col items-center justify-center px-5 hover:bg-rose-100">
+        <RouterLink to="/order" class="inline-flex flex-col items-center justify-center p-5 hover:bg-rose-100">
           <ChatBubbleBottomCenterTextIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Chat</span>
         </RouterLink>
-        <button class="inline-flex flex-col items-center justify-center px-5 rounded-e-2xl hover:bg-rose-100">
+        <button class="inline-flex flex-col items-center justify-center p-5 rounded-e-2xl hover:bg-rose-100">
           <UserIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Profile</span>
         </button>
