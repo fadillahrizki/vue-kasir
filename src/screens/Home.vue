@@ -76,7 +76,7 @@ const items = [
 </script>
 
 <template>
-  <div class="bg-white mx-auto p-4 w-full h-screen flex flex-col gap-8">
+  <div class="bg-white mx-auto p-2 w-full h-screen flex flex-col gap-2">
     <div class="flex gap-4 items-center p-2">
       <RouterLink to="/login">
         <ChevronLeftIcon class="w-8 h-8 p-1 text-rose-400 cursor-pointer bg-rose-100 rounded-md" />
@@ -100,7 +100,7 @@ const items = [
       </button>
     </div>
 
-    <div class="flex flex-col gap-4 overflow-y-auto grow p-2">
+    <div class="flex flex-col gap-2 overflow-y-auto grow p-2">
       <div v-for="item in items" :key="item.id"
         class="flex justify-between items-center bg-white shadow p-2 rounded-lg">
         <div class="flex gap-4 items-center">
@@ -117,19 +117,19 @@ const items = [
     <div class="relative z-50 w-full -translate-x-1/2 left-1/2 p-2">
       <div class="grid h-full w-full grid-cols-4 mx-auto bg-white border border-gray-200 rounded-2xl">
         <button
-          class="inline-flex flex-col items-center justify-center p-5 rounded-s-2xl hover:bg-rose-100 bg-rose-100">
+          class="inline-flex flex-col items-center justify-center p-3 rounded-s-2xl hover:bg-rose-100 bg-rose-100">
           <HomeIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Home</span>
         </button>
-        <button class="inline-flex flex-col items-center justify-center p-5 hover:bg-rose-100">
+        <button class="inline-flex flex-col items-center justify-center p-3 hover:bg-rose-100">
           <MapPinIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Map</span>
         </button>
-        <RouterLink to="/order" class="inline-flex flex-col items-center justify-center p-5 hover:bg-rose-100">
+        <RouterLink to="/order" class="inline-flex flex-col items-center justify-center p-3 hover:bg-rose-100">
           <ChatBubbleBottomCenterTextIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Chat</span>
         </RouterLink>
-        <button class="inline-flex flex-col items-center justify-center p-5 rounded-e-2xl hover:bg-rose-100">
+        <button class="inline-flex flex-col items-center justify-center p-3 rounded-e-2xl hover:bg-rose-100">
           <UserIcon class="w-5 h-5 text-rose-500" />
           <span class="sr-only">Profile</span>
         </button>

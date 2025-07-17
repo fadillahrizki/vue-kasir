@@ -5,7 +5,7 @@ const year = /\d{4}/.exec(Date())[0]
 
 <template>
   <div class="bg-linear-to-br from-rose-500 to-rose-400">
-    <div class="max-w-md mx-auto p-4 h-screen flex flex-col justify-around">
+    <div class="max-w-md mx-auto p-5 h-screen flex flex-col justify-around">
 
       <div class="text-center mb-6">
         <h3 class="text-white text-4xl">Foodi</h3>
@@ -14,8 +14,7 @@ const year = /\d{4}/.exec(Date())[0]
 
       <div class="flex flex-col">
         <div>
-          <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Email</label>
-          <div class="relative mb-6">
+          <div class="relative mb-3">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <EnvelopeIcon class="w-4 h-4 text-gray-500 " />
             </div>
@@ -25,8 +24,7 @@ const year = /\d{4}/.exec(Date())[0]
           </div>
         </div>
         <div>
-          <label for="input-group-2" class="block mb-2 text-sm font-medium text-white">Password</label>
-          <div class="relative mb-6">
+          <div class="relative mb-3">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <KeyIcon class="w-4 h-4 text-gray-500 " />
             </div>

@@ -76,7 +76,7 @@ const items = [
 </script>
 
 <template>
-  <div class="bg-white mx-auto p-4 w-full h-screen flex flex-col gap-8">
+  <div class="bg-white mx-auto p-2 w-full h-screen flex flex-col gap-2">
     <div class="flex gap-4 items-center p-2">
       <RouterLink to="/">
         <ChevronLeftIcon class="w-8 h-8 p-1 text-rose-400 cursor-pointer bg-rose-100 rounded-md" />
@@ -124,13 +124,9 @@ const items = [
     </div>
 
     <div class="relative z-50 w-full -translate-x-1/2 left-1/2 p-2">
-      <div class="bg-rose-500 rounded-2xl p-4 text-white flex flex-col gap-4">
+      <div class="bg-rose-500 rounded-2xl p-4 text-white flex flex-col gap-2">
         <div class="flex justify-between items-center">
-          <p>Subtotal</p>
-          <span class="font-semibold">$32</span>
-        </div>
-        <div class="flex justify-between items-center">
-          <p>Delivery Charge</p>
+          <p class="font-bold">Subtotal</p>
           <span class="font-semibold">$32</span>
         </div>
         <div class="flex justify-between items-center">
@@ -139,7 +135,7 @@ const items = [
         </div>
         <hr class="border-white" />
         <div class="flex justify-between items-center">
-          <p>Total</p>
+          <p class="font-bold">Total</p>
           <span class="font-semibold">$32</span>
         </div>
         <button class="bg-white text-rose-500 font-semibold rounded-full py-2 hover:bg-gray-100">
